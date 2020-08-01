@@ -1,0 +1,31 @@
+#style{
+font-weight: bold;
+font-style: italic;
+}
+
+.timer{
+position: absolute;
+left:30%;
+bottom: 50%; 
+justify-content: space-between;
+background-color: bisque;
+width: 400px;
+height: 300px;
+text-align: center;
+border-radius: 30%;
+}
+
+.f1{
+border-radius: 20%;
+justify-content: space-between;
+}
+#f2{
+border-radius: 20%;
+justify-content: space-between;
+}
+
+#f3{
+  border-radius: 20%;
+  justify-content: space-between;
+}
+
