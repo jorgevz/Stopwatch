@@ -70,7 +70,7 @@ class Stopwatch extends Component {
              <button className="f1" onClick={this.startTimer}>Resume</button>)}
         {this.state.timerOn === false && this.state.timerTime > 0 && (
               
-            <button id='f3' onClick={this.resetTimer}>Reset</button>)}
+            <button id="f3" onClick={this.resetTimer}>Reset</button>)}
             </div>
         
         
