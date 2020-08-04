@@ -39,7 +39,7 @@ class Stopwatch extends Component {
     
     // Here is the functionality of my RESET which i will later on implement on my
      //button.
-    resetTimer = () => {
+     resetTimer = () => {
         this.setState({
             timerStart: 0,
             timerTime: 0
