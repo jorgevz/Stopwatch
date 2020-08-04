@@ -46,36 +46,36 @@ class Stopwatch extends Component {
         });
     };
     render() {
-// Here i have what i will be rendering on my website together with assignment of my minutes 
-//and seconds, very similar to vanilla javascript. I also used the mathfloor method to assure that
-// i would only received round numbers that the user can understand once clicked.
-
-const { timerTime } = this.state;
-const seconds = ("0" + (Math.floor(timerTime / 1000) % 60)).slice(-2);
-const minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);
-return (
-    <div className="timer">
-    
-    <h3 id='style'>My Stopwatch</h3>      
-      {minutes} : {seconds} : 
- {this.state.timerOn === false && this.state.timerTime === 0 && (
- 
- 
- <button className='f1' onClick={this.startTimer}>Start</button> )}
- {this.state.timerOn === true && (
-
- <button id='f2' onClick={this.stopTimer}>Pause</button>)}
-  {this.state.timerOn === false && this.state.timerTime > 0 && (
-
-     <button className='f1' onClick={this.startTimer}>Resume</button>)}
-{this.state.timerOn === false && this.state.timerTime > 0 && (
-      
-    <button id='f3' onClick={this.resetTimer}>Reset</button>)}
-    </div>
-
-
-           
-        );
-    }
+        // Here i have what i will be rendering on my website together with assignment of my minutes 
+        //and seconds, very similar to vanilla javascript. I also used the mathfloor method to assure that
+        // i would only received round numbers that the user can understand once clicked.
+        
+        const { timerTime } = this.state;
+        const seconds = ("0" + (Math.floor(timerTime / 1000) % 60)).slice(-2);
+        const minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);
+        return (
+            <div className="timer">
+            
+            <h3 id='style'>My Stopwatch</h3>      
+              {minutes} : {seconds} : 
+         {this.state.timerOn === false && this.state.timerTime === 0 && (
+         
+         
+         <button className='f1' onClick={this.startTimer}>Start</button> )}
+         {this.state.timerOn === true && (
+        
+         <button id='f2' onClick={this.stopTimer}>Pause</button>)}
+          {this.state.timerOn === false && this.state.timerTime > 0 && (
+        
+             <button className='f1' onClick={this.startTimer}>Resume</button>)}
+        {this.state.timerOn === false && this.state.timerTime > 0 && (
+              
+            <button id='f3' onClick={this.resetTimer}>Reset</button>)}
+            </div>
+        
+        
+                   
+                );
+            }
 }
 export default Stopwatch;
