@@ -31,7 +31,7 @@ class Stopwatch extends Component {
      // Here is the functionality of my STOP  which i will later on implement on my
      //buttons.
 
-    stopTimer = () => {
+     stopTimer = () => {
         this.setState({ timerOn: false });
         clearInterval(this.timer);
     };
