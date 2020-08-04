@@ -14,7 +14,7 @@ class Stopwatch extends Component {
      //For this function i have my current time being substracted from the timerTime to determine what to display
      //once the START button is clicked.
 
-    startTimer = () => {
+     startTimer = () => {
         this.setState({
             timerOn: true,
             timerTime: this.state.timerTime,
