@@ -27,6 +27,7 @@ class Stopwatch extends Component {
         }, 10);
     };
     
+    
      // Here is the functionality of my STOP  which i will later on implement on my
      //buttons.
 
