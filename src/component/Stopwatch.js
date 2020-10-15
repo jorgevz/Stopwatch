@@ -56,10 +56,10 @@ class Stopwatch extends Component {
         return (
             <div className="timer">
             
-            <h3 id='style'>My Stopwatch</h3>      
+            <h3 id='style'>My Stopwatch</h3>        
               {minutes} : {seconds} - 
          {this.state.timerOn === false && this.state.timerTime === 0 && (
-         
+            
          
          <button className='s1' onClick={this.startTimer}>Start</button> )}
          {this.state.timerOn === true && (
